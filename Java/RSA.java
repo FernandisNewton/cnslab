@@ -1,15 +1,15 @@
 import java.util.*;
 import java.io.*;
-class rsa
-{
-static int mult(int x,int y,int n)
-{
-int k=1;
-int j;
-for (j=1; j<=y; j++)
-k = (k * x) % n;
-return ( int) k;
-}
+
+class rsa {
+    static int mult(int x, int y, int n) {
+        int k = 1;
+        int j;
+        for (j = 1; j <= y; j++)
+            k = (k * x) % n;
+        return (int) k;
+    }
+
 public static void main (String arg[])throws Exception
 {
 Scanner s=new Scanner(System.in);
